@@ -1,0 +1,142 @@
+.dashboard-employee{
+    margin-top: 20px;
+    
+}
+.sideDrawerLeft{
+    display: none;
+}
+
+
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    z-index: 2000;
+    cursor: pointer;
+    transition: 1s;
+}
+.menu div{
+    background: #ffffff;
+    height: 80px;
+    border-radius: 40px;
+    border:1px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+.menu div:hover{
+    background: linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);;
+    color: #ffffff;
+}
+.number-of-emp{
+    
+}
+.status-of-emp{
+}
+.salary-of-emp{
+}
+.note{
+}
+
+.mainArea{
+    
+}
+.total-employee{
+    
+    background: #ffffff;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    overflow: auto;
+}
+thead tr{
+    border-top: 1px solid #a3a1a1;
+    border-bottom:1px solid #a3a1a1;
+    overflow: auto;
+}
+thead td{
+    font-weight: 700;
+    overflow: auto  ;
+}
+td{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #222;
+}
+td .status{
+    display: inline-block;
+    height: 20px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+tr td:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.employees-status{
+    display: flex;
+    flex-direction: column;
+}
+.status-1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+.status-image{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #222;
+    margin-right: 25px;
+}
+.status-info{
+    width: 600px;
+    height: 200px;
+    background-color: #ffffff;
+
+}
+.mainArea-sidebar{
+    position: fixed;
+    left: 85%;
+    top: 230px;
+    height: 400px;
+    width: 185px;
+    background-color: #ffffff;
+    border:1px solid rgb(83, 81, 81);
+    box-shadow: 2px 1px 3px rgb(83, 81, 81);;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2px;
+}
+.mainArea-sidebar button:first-child, 
+.mainArea-sidebar button:nth-child(2), 
+.mainArea-sidebar button:nth-child(3){
+    margin: 10px;
+}
+.note-field{
+    display: flex;
+    flex: row;
+    justify-content: first baseline
+}
+.note div .button{
+    margin: 10px;
+}

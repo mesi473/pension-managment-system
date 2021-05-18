@@ -1,0 +1,75 @@
+
+body::-webkit-scrollbar{
+    width: 2px;
+}
+.header{
+    display: none;
+    z-index: 0;
+}
+.casher-dashboard-appbar{
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    position: fixed;
+    left: 300px;
+    width: calc(100% - 300px);
+    top: 0;
+    z-index: 100;
+    transition: left 300ms; 
+}
+.casher-dashboard-appbar nav{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.casher-user-profile{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.casher-menu-button{
+    display: none;
+}
+.casher-dashboard-menubarIcon{
+    display: flex;
+    flex-direction: row;
+
+}
+.casher-dashboard-menubarIcon label{
+    font-weight: 700;
+}
+.casher-profilePic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.casher-user-profile label{
+    color: #8390A2;
+}
+.casher-user-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.casher-dashboard-main{
+    margin-top: 80px;
+    padding: 2rem 1.5rem;
+    background-color: #f1f5f9;
+    color: #171711;
+    min-height: calc(100vh - 78px);
+    z-index: 200;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+    .casher-menu-button{
+        display: flex;
+    }
+}

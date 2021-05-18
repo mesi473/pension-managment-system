@@ -1,0 +1,141 @@
+.sidedrawer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    background: #f4f4f4;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+    
+    
+  }
+.sideDrawerLeft{
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 70%;
+    display: none;
+    transition: all 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 200;
+}
+
+.sideDrawerLeft.show{
+    display: flex;
+    z-index: 200;
+    transition: 1s;
+}
+.sidedrawer.show {
+    transform: translateX(0);
+    z-index: 400;
+    transition: 1s;
+}
+
+.sidedrawer__links{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sidedrawer__links >li{
+    display: flex;
+    align-items: center;
+}
+.sidedrawer__links >li>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #171717;
+    font-size: 1.6rem;
+}   
+.sidedrawer__links >li>a:hover{
+    background-color: #171717;
+    color: #f4f4f4;
+}
+.sidedrawer__links >li>a>span{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    
+}
+.sidedrawer__cartbadge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #171717;
+    color: #f4f4f4;
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+.sidedrawer__cartbadge:hover{
+    background-color:#f4f4f4 ;
+    color:#171717 ;
+}
+
+.drawerImage{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    z-index: 300;
+    border-radius: 40%;
+}
+.drawerImage img{
+    width: 96%;
+    height: 90%;
+    margin: 2%;
+    
+}
+.drawerItems{
+    position: relative;
+    margin-top: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.drawerItems ul{
+    list-style: none;
+    background-color: #f4f4f4;
+    text-decoration: none;
+}
+.drawerItems ul li a{
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.drawerItems ul>li>a>div{
+    margin: 5%;
+    font-size: 20px;
+    transition: 2s;
+}
+.drawerItems ul>li>a>div:hover{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drawerItems ul>li>a{
+    text-decoration: none;
+}
+@media (min-width:850px){
+    .sidedrawer {
+        display: none;
+    }
+    
+}

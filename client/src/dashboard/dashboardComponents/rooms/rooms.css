@@ -1,0 +1,11 @@
+.room-room{
+    margin: 40px;
+}
+.room-header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+}
+.room-header:first-child{
+    margin: 10px;
+}
